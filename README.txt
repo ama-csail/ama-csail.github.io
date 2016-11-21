@@ -1,25 +1,5 @@
-Material Design for Bootstrap
+# Accessibility for Mobile Applications (Website)
 
-Version: MDB Free 4.1.1
+This is the website for the MIT CSAIL project Accessibility for Mobile Applications. It is currently under development by Aaron Vontell, William Caruso, and Byungkyu Park, under the supervision of Lalana Kagal.
 
-Documentation:
-http://mdbootstrap.com/
-
-Getting started:
-http://mdbootstrap.com/getting-started/
-
-Tutorials:
-MDB-Bootstrap: http://mdbootstrap.com/bootstrap-tutorial/
-MDB-Wordpress: http://mdbootstrap.com/wordpress-tutorial/
-
-Templates:
-http://mdbootstrap.com/templates/
-
-License:
-http://mdbootstrap.com/license/
-
-Support:
-http://mdbootstrap.com/forums/forum/support/
-
-Contact:
-office@mdbootstrap.com
+Note that this website is also accessible.
