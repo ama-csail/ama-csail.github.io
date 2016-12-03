@@ -19,6 +19,9 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
+    <!-- Accessibility Menu -->
+    <link href="http://shakedwebdesign.com/plugins/accessibility-menu/accessibilitymenu.css" type="text/css" rel="stylesheet" />
+
     <!-- Template styles -->
     <style rel="stylesheet">
         /* TEMPLATE STYLES */
@@ -361,7 +364,13 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     
     <script src="/js/bootstrap-accessibility.js"></script>
-
+    <script type="text/javascript" src="http://shakedwebdesign.com/plugins/accessibility-menu/accessibilitymenu.js" data-language="eng" data-oemsource="accessible+" data-sign="classic"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $(".accessibilityimage").attr("src","img/icon-accessibility.png");
+            $(".accessibilityimage").attr("height","70");
+        });
+    </script>
 
 </body>
 
