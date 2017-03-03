@@ -1,460 +1,266 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--[if lt IE 8]><html class="no-js oldIE" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-US" class="no-js not-ie">
+<!--<![endif]-->
 
 <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MIT CSAIL | Accessibility of Mobile Apps</title>
+    <meta name="description" content="Accessible+ | an accessible website template that complies to Section 508 and WCAG 2.0 AA standards" />
+    <meta name="keywords" content="" />
 
-    <title>AMA - Android Accessibility</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/bootstrap-accessibility.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.5.7/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.5.7/slick-theme.css" />
+    <link rel="stylesheet" href="vendor/share/4.0/styles/sharewidget-4.0.css" />
+    <link href="vendor/rwdTable/1.0/css/rwdtable-core.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/jqueryui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="vendor/globalassets/styles/widgets/tooltips.css">
+    <link rel="stylesheet" href="vendor/globalassets/styles/widgets/dropdowns.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/features.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/style.css" title="default">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Accessibility Menu -->
-    <link href="http://shakedwebdesign.com/plugins/accessibility-menu/accessibilitymenu.css" type="text/css" rel="stylesheet" />
+    <link href="accessibility-menu/accessibilitymenu.css" type="text/css" rel="stylesheet" />
 
-    <!-- Template styles -->
-    <style rel="stylesheet">
-        /* TEMPLATE STYLES */
-        /* Necessary for full page carousel*/
-        
-        html,
-        body {
-            height: 100%;
-        }
-        /* Navigation*/
-        
-        .navbar {
-            background-color: transparent;
-        }
-        
-        .top-nav-collapse {
-            background-color: #4285F4;
-        }
-        
-        footer.page-footer {
-            background-color: #4285F4;
-        }
-        
-        @media only screen and (max-width: 768px) {
-            .navbar {
-                background-color: #4285F4;
-            }
-        }
-        /* Carousel*/
-        
-        .carousel {
-            height: 50%;
-        }
-        
-        @media (max-width: 776px) {
-            .carousel {
-                height: 100%;
-            }
-        }
-        
-        .carousel-item,
-        .active {
-            height: 100%;
-        }
-        
-        .carousel-inner {
-            height: 100%;
-        }
-        
-        .carousel-item:nth-child(1) {
-            background-image: url("http://mdbootstrap.com/images/slides/slide%20(6).jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.4;
-        }
-        
-        .carousel-item:nth-child(2) {
-            background-image: url("http://mdbootstrap.com/images/slides/slide%20(11).jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        .carousel-item:nth-child(3) {
-            background-image: url("http://mdbootstrap.com/images/slides/slide%20(7).jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        /*Caption*/
-        
-        .flex-center {
-            color: #fff;
-        }
-    </style>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:400,200,700' rel='stylesheet' type='text/css'>
+
+    <script src="vendor/modernizr/modernizr.js"></script>
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/jqueryui/ui/jquery-ui.js"></script>
+    <script src="vendor/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="vendor/globalassets/scripts/assets.core.js"></script>
+
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {
+            "message": "This website uses cookies to store your accessibility preferences. No personal / identifying information is stored.",
+            "dismiss": "Dismiss",
+            "learnMore": "",
+            "link": null,
+            "theme": "dark-top"
+        };
+
+    </script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
 
 </head>
 
 <body>
 
+    <header role="banner">
+        <div class="container navContainer">
+            <a class="skip-navigation sr-only sr-only-focusable" href="#page-title">Skip Navigation</a>
+            <div class="navbar-header active">
+                <a class="brand pull-left" href="index.html">
+                    <br>
+                    <h1>Accessibility of Mobile Apps</h1></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topNavList" aria-expanded="false">
+                    <span class="adobeBlank" aria-hidden="true">Expand Navigation</span>
+                    <em class="fa fa-bars fa-lg" style="font-family :'FontAwesome' !important">
+                        <span id="expandText" class="sr-only">Expand Navigation</span>
+                    </em>
+                </button>
+            </div>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
-
-        <!-- Collapse button-->
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
-            <i class="fa fa-bars"></i>
-        </button>
-
-        <div class="container">
-
-            <!--Collapse content-->
-            <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                <!--Navbar Brand-->
-                <a class="navbar-brand" href="https://ama-csail.github.io/" target="_blank">AMA</a>
-                <!--Links-->
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <nav class="collapse navbar-collapse" aria-label="Main navigation" id="topNavList" aria-expanded="false">
+                <ul class="nav navbar-nav navbar-right marginTop40" aria-expanded="false">
+                    <li class="">
+                        <a href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Home </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/resources.html">Resources</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="our_team.html">Our Team</a></li>
+                            <li><a href="our_mission.html">Our Mission</a></li>
+                            <li><a href="http://dig.csail.mit.edu">MIT DIG @ CSAIL</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">AMA Library</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accessibility Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="what_is_mobile_accessibility.html">What is Mobile Accessibility?</a></li>
+                            <li><a href="digital_accessibility_legislation.html">Digital Accessibility Legislation</a></li>
+                            <li><a href="digital_accessibility_standards.html">Digital Accessibility Standards</a></li>
+                            <li><a href="accessibility_faq.html">FAQ</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AMA Library <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ama_library_overview.html">What is AMA Library?</a></li>
+                            <li><a href="ama_tutorials.html">Tutorials</a></li>
+                            <li><a href="ama_documentation.html">Documentation</a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="sitemap.html">Sitemap</a>
                     </li>
                 </ul>
-                <!--Search form-->
-                <form class="form-inline">
-                    <input class="form-control" type="text" placeholder="Search">
-                </form>
-            </div>
-            <!--/.Collapse content-->
-
+            </nav>
         </div>
+    </header>
 
-    </nav>
-    <!--/.Navbar-->
-
-    <!--Carousel Wrapper-->
-    <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
-        <!--Indicators-->
-        <!--
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-1" data-slide-to="1"></li>
-            <li data-target="#carousel-example-1" data-slide-to="2"></li>
-        </ol>
-        -->
-        <!--/.Indicators-->
-
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-
-            <!--First slide-->
-            <div class="carousel-item active">
-                <!--Caption-->
-                <div class="flex-center animated fadeInDown">
-                    <ul>
-                        <li>
-                            <h1 class="h1-responsive">Accessibility of Mobile Applications</h1></li>
-                        <li>
-                            <p>Use AMA to create accessible Android applications fast and easy!</p>
-                        </li>
-                        <li>
-                            <!--a target="_blank" href="http://mdbootstrap.com/getting-started/" class="btn btn-primary btn-lg">Sign up!</a-->
-                            <a href="/resources.html" class="btn btn-default btn-lg">Learn more</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Caption-->
-            </div>
-            <!--/.First slide-->
-
-            <!--Second slide -->
-            <!--<div class="carousel-item">-->
-                <!--Caption-->
-                <!--
-                <div class="flex-center animated fadeInDown">
-                    <ul>
-                        <li>
-                            <h1 class="h1-responsive">Tutorials and Resources for Accessible Design</h1>
-                        </li>
-                        <li>
-                            <p>We provide tutorials and design resources that will help you design applications from the start.</p>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-primary btn-lg">Start learning</a>
-                        </li>
-                    </ul>
-                </div>
-                -->
-                <!--Caption-->
-            <!--</div>-->
-            <!--/.Second slide -->
-
-            <!--Third slide-->
-            <!--<div class="carousel-item">-->
-                <!--Caption-->
-                <!--
-                <div class="flex-center animated fadeInDown">
-                    <ul>
-                        <li>
-                            <h1 class="h1-responsive">Easy to use Method and Tests</h1></li>
-                        <li>
-                            <p>We provide a plethora of methods and tests for your accessible application.</p>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg">Documentation</a>
-                        </li>
-                    </ul>
-                </div>
-                -->
-                <!--Caption-->
-            <!--</div>-->
-            <!--/.Third slide-->
-        </div>
-        <!--/.Slides-->
-
-        <!--Controls-->
-        <!--
-        <a class="left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
-            <span class="icon-prev" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
-            <span class="icon-next" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        -->
-        <!--/.Controls-->
+    <div id="mainImageDiv">
+        <img src="images/header.jpg" class="headImage" alt="header hands typing on keyboard">
     </div>
-    <!--/.Carousel Wrapper-->
 
-    <br>
+    <!-- begin Main -->
+    <main role="main" aria-label="main section" id="main-content">
+        <!-- The example code below will create a two column grid with a medium breakpoint -->
+        <div class="container bottomMargin50" role="header and benefits">
+            <section id="page-title">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="center">Helping Developers Make Accessible Mobile Apps</h1>
+                        <h2 class="center">This website complies with <strong>Section 508</strong> & <strong>WCAG 2.0 AA</strong></h2>
+                        <div class="center">
+                            <a href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance"><img height="32" width="88" src="http://www.w3.org/WAI/wcag2AA" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0"></a>
+                        </div>
+                        <hr/>
+                    </div>
+                </div>
+            </section>
 
-    <!--Content-->
-    <div class="container">
-        <div class="row">
-            <!--First columnn-->
-            <div class="col-md-4">
-                <!--Card-->
-                <div class="card">
-
-                    <!--Card image-->
-                    <div class="view overlay hm-white-slight">
-                        <img src="http://capitalprojects.mit.edu/sites/default/files/styles/project_full_540x348/public/003179-Andy-Ryan.jpg?itok=LYeL45xC" class="img-fluid" alt="">
-                        <div data-toggle="modal" data-target="#goalModal">
-                            <div class="mask"></div>
+            <section id="boxes" role="features" class="">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="featured-box noborder">
+                            <!-- add .transparent for no background color -->
+                            <button class="btn buttonRound blue"><span aria-hidden="true"><i class="fa fa-universal-access"></i></span><span class="sr-only">Universal-Access Icon</span></button>
+                            <h4>Our Mission</h4>
+                            <p>We hope to transform native mobile development for accessibility by providing resources and tools for developers and designers.</p>
                         </div>
                     </div>
-                    <!--/.Card image-->
-
-                    <!--Card content-->
-                    <div class="card-block">
-                        <!--Title-->
-                        <h4 class="card-title">Our Goals</h4>
-                        <!--Text-->
-                        <p class="card-text">We hope to transform native mobile development for accessibility by providing resources and tools for developers and designers. </p>
-                    </div>
-                    <!--/.Card content-->
-
-                </div>
-                <!--/.Card-->
-            </div>
-            <!--First columnn-->
-
-            <!--Second columnn-->
-            <div class="col-md-4">
-                <!--Card-->
-                <div class="card">
-
-                    <!--Card image-->
-                    <div class="view overlay hm-white-slight">
-                        <img src="/img/da_team.JPG" class="img-fluid" alt="">
-                        <div data-toggle="modal" data-target="#teamModal">
-                            <div class="mask"></div>
+                    <div class="col-md-4">
+                        <div class="featured-box noborder">
+                            <!-- add .transparent for no background color -->
+                            <button class="btn buttonRound blue"><span aria-hidden="true"><i class="fa fa-users"></i></span><span class="sr-only">Users Icon</span></button>
+                            <h4>Our Team</h4>
+                            <p>We are three computer science undergraduate students at MIT with a passion for accessibility and UI design, specifically in the areas of Android and iOS.</p>
                         </div>
                     </div>
-                    <!--/.Card image-->
-
-                    <!--Card content-->
-                    <div class="card-block">
-                        <!--Title-->
-                        <h4 class="card-title">The Team</h4>
-                        <!--Text-->
-                        <p class="card-text">We are three computer science undergraduate students at MIT with a passion for accessibility and UI design, specifically in the areas of Android and iOS.</p>
-                        <!--a href="#" class="btn btn-primary">Read more</a-->
-                    </div>
-                    <!--/.Card content-->
-
-                </div>
-                <!--/.Card-->
-            </div>
-            <!--Second columnn-->
-
-            <!--Third columnn-->
-            <div class="col-md-4">
-                <!--Card-->
-                <div class="card">
-
-                    <!--Card image-->
-                    <div class="view overlay hm-white-slight">
-                        <img src="https://sakurahoteltokyo.files.wordpress.com/2012/08/7723572802_b8ae23b0a3_b-scaled1000.jpg" class="img-fluid" alt="">
-                        <div data-toggle="modal" data-target="#amaModal">
-                            <div class="mask"></div>
+                    <div class="col-md-4">
+                        <div class="featured-box noborder">
+                            <!-- add .transparent for no background color -->
+                            <button class="btn buttonRound blue"><span aria-hidden="true"><i class="fa fa-code"></i></span><span class="sr-only">HTML Tag Icon</span></button>
+                            <h4>Open Source</h4>
+                            <p>All parts of this project are open source and available to all developers. We hope to encourage innovation in accessible design for a better world.</p>
                         </div>
                     </div>
-                    <!--/.Card image-->
+                </div>
+            </section>
+        </div>
 
-                    <!--Card content-->
-                    <div class="card-block">
-                        <!--Title-->
-                        <h4 class="card-title">Accessibility for All</h4>
-                        <!--Text-->
-                        <p class="card-text">All parts of this project are open source and available to all developers. We hope to encourage innovation in accessible design for a better world.</p>
-                        <!--a href="#" class="btn btn-primary">Read more</a-->
+        <section role="Action bar" class="bottomMargin50">
+            <div class="ActionBarDiv">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="ActionBarText">
+                                "The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect."
+                                <br><strong>-Tim Berners-Lee, W3C Director and inventor of the World Wide Web</strong>
+                            </div>
+                        </div>
                     </div>
-                    <!--/.Card content-->
-
-                </div>
-                <!--/.Card-->
-            </div>
-            <!--Third columnn-->
-        </div>
-    </div>
-    <!--/.Content-->
-
-
-    <!-- Goal Modal -->
-    <div class="modal fade" id="goalModal" tabindex="-1" role="dialog" aria-labelledby="goalModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <!--Content-->
-            <div class="modal-content">
-                <!--Header-->
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title" id="goalModalLabel">Our Goals</h4>
-                </div>
-                <!--Body-->
-                <div class="modal-body">
-                    PUT GOALS HERE
-                </div>
-                <!--Footer-->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
-            <!--/.Content-->
-        </div>
-    </div>
-    
-    <!-- Team Modal -->
-    <div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <!--Content-->
-            <div class="modal-content">
-                <!--Header-->
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title" id="teamModalLabel">The Team</h4>
-                </div>
-                <!--Body-->
-                <div class="modal-body">
-                    PUT TEAM HERE
-                </div>
-                <!--Footer-->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </section>
+
+        <!--container-->
+        <section class="alternate bottomMargin50">
+            <div class="container">
+                <header class="text-center">
+                    <h2>Designed to be used with a <strong>keyboard</strong></h2>
+                    <p class="lead">All actionable controls are hand-picked to support keyboard usage</p>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <h4><strong>WCAG 2.0 AA</strong></h4>
+                        <p>"Web Content Accessibility Guidelines (WCAG) are part of a series of web accessibility guidelines published by the Web Accessibility Initiative (WAI) of the World Wide Web Consortium (W3C), the main international standards organization for the internet. They consist of a set of guidelines for making content accessible, primarily for people with disabilities, but also for all user agents, including highly limited devices, such as mobile phones..." (source: <a href="https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines" target="_blank">Wikipedia</a>).</p>
+
+                        <h4><strong>Section 508</strong></h4>
+                        <p class="dropcap">"...Section 508 was enacted to eliminate barriers in information technology, to make available new opportunities for people with disabilities, and to encourage development of technologies that will help achieve these goals..." (source: <a href="https://en.wikipedia.org/wiki/Section_508_Amendment_to_the_Rehabilitation_Act_of_1973" target="_blank">Wikipedia</a>).</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h4>Accessible<strong>+</strong></h4>
+                        <div id="accordion-container" class="accordion-light">
+                            <h3>Accessibility Helper Menu</h3>
+                            <div>Choose accessibility preferences in the menu to the left. Your choices will be stored in your web browsers cahce.</div>
+                            <h3>Compliant HTML</h3>
+                            <div>The template has been thourghly tested and is compatible with both WCAG 2.0 AA and Section 508.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--/.Content-->
-        </div>
-    </div>
-    
-    <!-- AMA Modal -->
-    <div class="modal fade" id="amaModal" tabindex="-1" role="dialog" aria-labelledby="amaModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <!--Content-->
-            <div class="modal-content">
-                <!--Header-->
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title" id="amaModalLabel">Accessiblity for All</h4>
-                </div>
-                <!--Body-->
-                <div class="modal-body">
-                    PUT MORE HERE
-                </div>
-                <!--Footer-->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </section>
+
+        <section class="bottomMargin50">
+            <div class="container">
+                <header class="text-center">
+                    <h2>Collaborators</h2>
+                </header>
+                <div class="row text-center">
+                    <div class="col-md-4 col-sm-6">
+                        <img class="notClients" src="images/dig.png" alt="microsoft logo" height="100px"/>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img class="notClients" src="images/BridgingApps.png" alt="microsoft logo" height="100px"/>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <img class="notClients colaFix" src="images/uxmit.png" alt="coca-cola logo" height="100px" />
+                    </div>
                 </div>
             </div>
-            <!--/.Content-->
+        </section>
+
+    </main>
+
+
+    <a href="#" class="scrollToTop" alt="Scroll To Top"><span class="sr-only">Scroll To Top</span></a>
+    <!-- begin footer-->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p><small>Copyright &copy; 2016 AMA Project | Decentralized Information Group | CSAIL | MIT | Cambridge, MA. Template Designed by <a href="http://shakedwebdesign.com/" target="_blank">Sharon Shaked</a>.</small></p>
         </div>
-    </div>
-    
-
-    <!--Footer-->
-    <footer class="page-footer center-on-small-only">
-        
-        <!--Call to action-->
-        <div class="call-to-action">
-            <p>"The power of the Web is in its universality. <br> Access by everyone regardless of disability is an essential aspect."<br> <strong>-Tim Berners-Lee, W3C Director and inventor of the World Wide Web</strong></p>
-            <hr>
-            <h4>Accessiblity of Mobile Applications</h4>
-        </div>
-        <!--/.Call to action-->
-
-        <!--Copyright-->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2016 Copyright: <a href="http://dig.csail.mit.edu"> MIT DIG </a>
-
-            </div>
-        </div>
-        <!--/.Copyright-->
-
     </footer>
-    <!--/.Footer-->
 
+    <!-- end footer -->
 
-    <!-- SCRIPTS -->
+    <!-- build:js scripts/main.js -->
+    <!--<script data-main="scripts/main" src="vendor/requirejs/require.js"></script>-->
+    <!-- endbuild -->
+    <script src="vendor/globalassets/scripts/assets.responsive.js"></script>
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script src="vendor/share/4.0/js/sharewidget-4.0.js"></script>
+    <script type="text/javascript" src="vendor/slick-1.5.7/slick.min.js"></script>
+    <script src="vendor/back-to-top/main.js"></script>
+    <script type="text/javascript" src="accessibility-menu/accessibilitymenu.js" data-language="eng" data-oemsource="accessible+" data-sign="classic"></script>
+    <script>
+        $(function() {
+            $('#accordion-container').accordion();
+        });
 
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/tether.min.js"></script>
-
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    
-    <script src="/js/bootstrap-accessibility.js"></script>
-    <script type="text/javascript" src="http://shakedwebdesign.com/plugins/accessibility-menu/accessibilitymenu.js" data-language="eng" data-oemsource="accessible+" data-sign="classic"></script>
+    </script>
     <script type="text/javascript">
         $( document ).ready(function() {
-            $(".accessibilityimage").attr("src","img/icon-accessibility.png");
+            $(".accessibilityimage").attr("src","images/icon-accessibility.png");
             $(".accessibilityimage").attr("height","70");
         });
     </script>
-
 </body>
 
 </html>

@@ -1,0 +1,283 @@
+   <!DOCTYPE HTML>
+<!--[if lt IE 8]><html class="no-js oldIE" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US" class="no-js not-ie"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MIT CSAIL | Accessibility of Mobile Apps</title>
+    <meta name="description" content="Accessible+ | an accessible website template that complies to Section 508 and WCAG 2.0 AA standards" />
+    <meta name="keywords" content="" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.5.7/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.5.7/slick-theme.css"/>
+    <link rel="stylesheet" href="vendor/share/4.0/styles/sharewidget-4.0.css"/>
+    <link href="vendor/rwdTable/1.0/css/rwdtable-core.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/jqueryui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="vendor/globalassets/styles/widgets/tooltips.css">
+    <link rel="stylesheet" href="vendor/globalassets/styles/widgets/dropdowns.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/features.css">    
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/style.css" title="default">
+        
+    <!-- Accessibility Menu -->
+    <link href="accessibility-menu/accessibilitymenu.css" type="text/css" rel="stylesheet" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:400,200,700' rel='stylesheet' type='text/css'>
+
+    <script src="vendor/modernizr/modernizr.js"></script>
+
+    <script src="vendor/jquery/jquery.js"></script>  
+    <script src="vendor/jqueryui/ui/jquery-ui.js"></script>
+    <script src="vendor/bootstrap/3.3.1/js/bootstrap.min.js"></script>    
+    <script src="vendor/globalassets/scripts/assets.core.js"></script>
+    
+</head>
+<body>
+    
+  <style>
+        .w3-sidenav, .w3-sidebar {
+            height: 100%;
+            width: 200px;
+            background-color: #fff;
+            position: fixed!important;
+            z-index: 1;
+            overflow: auto;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+            top: 0px;
+            margin-left: 85%
+        }
+
+        .side-list {
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .side-list li {
+            padding: 5px;
+        }
+    </style>
+
+    <!-- Sidebar -->
+
+    <nav class="w3-sidenav w3-white w3-card-2" style="width:15%">
+      <br>
+        <ul class="side-list" style='margin-top:50%;'>
+            <li><a href="#vision">Low Vision</a></li>
+            <li><a href="#color-blind">Color Blind</a></li>
+            <li><a href="#limited-vocal">Limited Vocal Abilites</a></li>
+            <li><a href="#limited-hearing">Limited Hearing</a></li>
+            <li><a href="#lack-motor">Lack of Motor Skills</a></li>
+            <li><a href="#limited-cognition">Limited Cognitive Abilities</a></li>
+        </ul>
+      
+    </nav>           
+    <!-- /#sidebar-wrapper -->
+
+    
+    <header role="banner" style='margin-right:15%;'>
+        <div class="container navContainer" >
+            <a class="skip-navigation sr-only sr-only-focusable" href="#page-title">Skip Navigation</a>
+            <div class="navbar-header active">
+                <a class="brand pull-left" href="index.html">
+                    <br>
+                    <h1>Accessibility of Mobile Apps</h1></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topNavList" aria-expanded="false">
+                    <span class="adobeBlank" aria-hidden="true">Expand Navigation</span>
+                    <em class="fa fa-bars fa-lg" style="font-family :'FontAwesome' !important">
+                        <span id="expandText" class="sr-only">Expand Navigation</span>
+                    </em>
+                </button>
+            </div>
+            
+            <nav class="collapse navbar-collapse" aria-label="Main navigation" id="topNavList" aria-expanded="false">
+                <ul class="nav navbar-nav navbar-right marginTop40" aria-expanded="false">
+                    <li class="">
+                        <a href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="our_team.html">Our Team</a></li>
+                            <li><a href="our_mission.html">Our Mission</a></li>
+                            <li><a href="http://dig.csail.mit.edu">MIT DIG @ CSAIL</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accessibility Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="what_is_mobile_accessibility.html">What is Mobile Accessibility?</a></li>
+                            <li><a href="digital_accessibility_legislation.html">Digital Accessibility Legislation</a></li>
+                            <li><a href="digital_accessibility_standards.html">Digital Accessibility Standards</a></li>
+                            <li><a href="accessibility_faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AMA Library <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ama_library_overview.html">What is AMA Library?</a></li>
+                            <li><a href="ama_tutorials.html">Tutorials</a></li>
+                            <li><a href="ama_documentation.html">Documentation</a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="sitemap.html">Sitemap</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <!-- begin Main -->
+        <main role="main" aria-label="main section" id="main-content" style='margin-right:15%;'>
+
+            <section id="page-title">
+                <div class="container " role="header and benefits"> 
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <ol class="breadcrumb" role="breadcrumb">
+                                <li>
+                                    <a href="index.html" title="Home">Home</a>
+                                </li>
+                                <li class="active">
+                                    Features - Page Full Width
+                                </li>   
+                            </ol>
+
+                            <h1 class="pageTitle">Features - Page Full Width</h1>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>  
+
+            
+            <style>
+                /* Tooltip container */
+                .w3-tooltip {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+                    opacity: 1;
+                }
+
+                /* Tooltip text */
+                .w3-tooltip .w3-tooltiptext {
+                    bottom: 105%;
+                    visibility: hidden;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    padding: 5px;
+                    border-radius: 6px;
+                    /* Position the tooltip text - see examples below! */
+                    position: absolute;
+                    z-index: 1;
+                }
+
+                /* Show the tooltip text when you mouse over the tooltip container */
+                .w3-tooltip:hover .w3-tooltiptext {
+                    visibility: visible;
+                }
+                </style>
+            
+        <div class="container bottomMargin50">
+
+            <h1 id="vision">Vision</h1>
+            
+            <div class="item">
+            <h5 class="w3-tooltip pull-right">WCAG 2.0 Reference: 1.1
+              <span class="w3-tooltiptext">Text Alternatives</span>
+            </h5>
+            <h4>Check if TalkBack is installed</h4>
+            <p><i>Make sure TalkBack is installed and configured</i></p>
+            <p>Having TalkBack installed is essential to the functioning of our accessible features for vision impaired users. </p>
+            <pre>
+            
+/**
+ * Checks to see that Google TalkBack is installed
+ * @param context The context that wishes to know the results
+ * @return true if TalkBack is installed
+ */
+public boolean isTalkBackInstalled(Context context);
+
+/**
+ * Checks to see that Google TalkBack is currently enabled
+ * @param context The context that wishes to know the results
+ * @return true if TalkBack is enabled
+ */
+public boolean isTalkBackEnabled(Context context);
+
+/**
+ * Checks to see that explore by touch (provided via TalkBack) is currently enabled
+ * @param context The context that wishes to know the results
+ * @return true if explore by touch is enabled
+ */
+public boolean isExploreByTouchEnabled(Context context);
+            </pre>            
+            </div>
+            <div class="item">
+            <h5 class="w3-tooltip pull-right">WCAG 2.0 Reference: 4.1
+              <span class="w3-tooltiptext">Compatible</span>
+            </h5>
+            <h4>Optimal TalkBack Pitch and Speed</h4>
+            <p><i>The user must have the ability to modify the pitch and speed of the talking voice</i></p>
+            <p>TalkBack must be fully customizable for the user, in order to attend to their needs. This includes the manipulation of TalkBack settings. </p>
+            <pre>
+
+/**
+ * Provides an Intent that will open the Google Play store, at the TalkBack installation screen
+ * @param context The context that wishes to know the results
+ * @return The Intent that will open the TalkBack Play Store page
+ */
+public Intent getTalkBackPlayIntent(Context context);
+
+            </pre>            
+            </div>
+
+
+
+        </div>
+
+
+        </main>
+
+
+    <a href="#" class="scrollToTop" alt="Scroll To Top"><span class="sr-only">Scroll To Top</span></a>
+<!-- begin footer-->
+    <footer class="footer" role="contentinfo" style='margin-right:15%;'>
+        <div class="container">
+            <p><small>Copyright &copy; 2016 AMA Project | Decentralized Information Group | CSAIL | MIT | Cambridge, MA. Template Designed by <a href="http://shakedwebdesign.com/" target="_blank">Sharon Shaked</a>.</small></p>
+        </div>
+    </footer>
+<!-- end footer -->    
+
+<!-- build:js scripts/main.js -->
+<!--<script data-main="scripts/main" src="vendor/requirejs/require.js"></script>-->
+<!-- endbuild -->
+<!-- endbuild -->
+<script src="vendor/globalassets/scripts/assets.responsive.js"></script>
+<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+
+<script src="vendor/share/4.0/js/sharewidget-4.0.js"></script>
+<script type="text/javascript" src="vendor/slick-1.5.7/slick.min.js"></script>
+<script src="vendor/portfolio/jquery.quicksand.js"></script>    
+<script src="vendor/globalassets/scripts/breadcrumb.js"></script>
+<script src="vendor/back-to-top/main.js"></script> 
+<script type="text/javascript" src="accessibility-menu/accessibilitymenu.js" data-language="eng" data-oemsource="accessible+" data-sign="classic"></script>
+<script type="text/javascript">
+        $( document ).ready(function() {
+            $(".accessibilityimage").attr("src","images/icon-accessibility.png");
+            $(".accessibilityimage").attr("height","70");
+        });
+    </script>
+</body>
+</html>
