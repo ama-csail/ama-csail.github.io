@@ -61,6 +61,30 @@
         .side-list li {
             padding: 5px;
         }
+        .mobile-do {
+            font-weight: bold;
+            color: green;
+            text-align: center;
+        }
+        .mobile-dont {
+            font-weight: bold;
+            color: red;
+            text-align: center;
+        }
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+            background-color: #337ab7;
+        }
+
+        .tab-image {
+            height: 30px;
+        }
+
+        .os-tutorials .nav-tabs {
+            font-size: 24px;
+        }
+          .title-image {
+              height: 40px;
+          }
     </style>
 
     <!-- Sidebar -->
@@ -115,7 +139,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="our_team.html">Our Team</a></li>
                             <li><a href="our_mission.html">Our Mission</a></li>
-                            <li><a href="http://dig.csail.mit.edu">MIT DIG @ CSAIL</a></li>
+                            <li><a href="http://dig.csail.mit.edu" target='_blank'>MIT DIG @ CSAIL</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -156,11 +180,11 @@
                                     <a href="index.html" title="Home">Home</a>
                                 </li>
                                 <li class="active">
-                                    Features - Page Full Width
+                                    Native Mobile Accessibility Tutorials
                                 </li>   
                             </ol>
 
-                            <h1 class="pageTitle">Features - Page Full Width</h1>
+                            <h1 class="pageTitle">Native Mobile Accessibility Tutorials</h1>
 
 
 
@@ -169,73 +193,220 @@
                 </div>
             </section>  
 
-            
-            <style>
-                .mobile-do {
-                    font-weight: bold;
-                    color: green;
-                    text-align: center;
-                }
-                .mobile-dont {
-                    font-weight: bold;
-                    color: red;
-                    text-align: center;
-                }
-            </style>
-            
+
         <div class="container bottomMargin50">
 
             <h1 id="perceivable">1. Perceivable</h1>
             
-            <div class="text-alternatives">
-            <h3>1.1 Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</h4>
-            <div class='col-xs-6'>
-                <h2 class='mobile-do'>Mobile Do's</h3>
-                <hr>
-                <div id="text-alternatives-accordion-container" class="accordion-light ui-accordion ui-widget ui-helper-reset" role="tablist">
-                    <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-accordion-accordion-container-header-0" aria-controls="ui-accordion-accordion-container-panel-0" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e" role="presentation" aria-hidden="true"></span>Provide Text Alternatives for all images, videos and sound clips.<span class="sr-only sr-section-alert"> section is collapsed</span></h3>
-                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-accordion-container-panel-0" aria-labelledby="ui-accordion-accordion-container-header-0" role="tabpanel" aria-hidden="true" aria-expanded="false" aria-live="polite" style="display: none; height: 134px;">Include a short and long description about the piece of media. If avialable, include captions for audio and video.</div>
-                    <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active ui-corner-top" role="tab" id="ui-accordion-accordion-container-header-1" aria-controls="ui-accordion-accordion-container-panel-1" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s" role="presentation" aria-hidden="true"></span>Compliant HTML<span class="sr-only sr-section-alert"> section is expanded</span></h3>
-                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" id="ui-accordion-accordion-container-panel-1" aria-labelledby="ui-accordion-accordion-container-header-1" role="tabpanel" aria-hidden="false" aria-expanded="false" style="display: block; height: 134px;">The template has been thourghly tested and is compatible with both WCAG 2.0 AA and Section 508.</div>
+            <div class="container">
+                <h6>1.1 Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</h6>
+                <br>
+                <div class="col-xs-12 col-sm-9 col-sm-offset-1">
+                    <p>Some users may not be able to hear audible content. Some users may not be able to see visual content.
+                        Having an alternative delivery, in addition to the media that can be perceived,
+                        supports comprehension. Multiple delivery formats also help cognitively impaired users.</p>
+                </div>
+                <div class='col-xs-6'>
+                    <h2 class='mobile-do'>Mobile Do's</h2>
+                    <hr>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#do-collapse0">
+                                        <span class="fa fa-check">&nbsp;&nbsp;&nbsp;</span><strong>Captions</strong> must be available on still images</a>
+                                </h4>
+                            </div>
+                            <div id="do-collapse0" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <strong><i>WCAG 2.0 Level A</i><br></strong>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#do-collapse1">
+                                        <span class="fa fa-check">&nbsp;&nbsp;&nbsp;</span><strong>Subtitles</strong> must be provided where feasible</a>
+                                </h4>
+                            </div>
+                            <div id="do-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#do-collapse2">
+                                        <span class="fa fa-check">&nbsp;&nbsp;&nbsp;</span><strong>Audio Described</strong> or <strong>Sign Language</strong> versions should be available</a>
+                                </h4>
+                            </div>
+                            <div id="do-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#do-collapse3">
+                                        <span class="fa fa-check">&nbsp;&nbsp;&nbsp;</span><strong>Transcripts</strong> should also be provided (if available)</a>
+                                </h4>
+                            </div>
+                            <div id="do-collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-xs-6'>
+                    <h2 class='mobile-dont'>Mobile Dont's</h2>
+                    <hr>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#donot-collapse0">
+                                        <span class="fa fa-times">&nbsp;&nbsp;&nbsp;</span>Provide images <strong>without text descriptions</strong></a>
+                                </h4>
+                            </div>
+                            <div id="donot-collapse0" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#donot-collapse1">
+                                        <span class="fa fa-times">&nbsp;&nbsp;&nbsp;</span>Provide audio and video content <strong>without subtitles</strong></a>
+                                </h4>
+                            </div>
+                            <div id="donot-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#donot-collapse2">
+                                        <span class="fa fa-times">&nbsp;&nbsp;&nbsp;</span>Provide <strong>audio-only instructions</strong> for interactive apps</a>
+                                </h4>
+                            </div>
+                            <div id="donot-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#donot-collapse3">
+                                        <span class="fa fa-times">&nbsp;&nbsp;&nbsp;</span>Visual content that contains important information <strong>without alternatives</strong></a>
+                                </h4>
+                            </div>
+                            <div id="donot-collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                    </div>                </div>
+            </div>
+            <br>
+            <div class="container os-tutorials">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a data-toggle="tab" href="#android"> <img class='tab-image' src="images/android.png">&nbsp;&nbsp;Android </a></li>
+                    <li><a data-toggle="tab" href="#ios"><img class='tab-image' src="images/ios.png">&nbsp;&nbsp;iOS</a></li>
+                    <li><a data-toggle="tab" href="#windows"><img class='tab-image' src="images/windows.png">&nbsp;&nbsp;Windows</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="android" class="tab-pane fade in active">
+                        <h3>HOME</h3>
+                        <p>Some content.</p>
+                    </div>
+                    <div id="ios" class="tab-pane fade">
+                        <h3>Menu 1</h3>
+                        <p>Some content in menu 1.</p>
+                    </div>
+                    <div id="windows" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Some content in menu 2.</p>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="container">
+                <h3><img class='title-image' src="images/android.png">&nbsp;&nbsp;AMA Library Helper Methods</h3>
+                <hr/>
+                <div class="col-xs-6"> <!-- required for floating -->
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a data-toggle="pill" href="#home"><pre>
+/**
+* Checks to see that Google TalkBack is installed
+* @param context The context that wishes to know the results
+* @return true if TalkBack is installed
+*/
+public boolean isTalkBackInstalled(Context context);
+                            </pre></a></li>
+                        <li><a data-toggle="pill" href="#profile"><pre>
+/**
+ * Checks to see that Google TalkBack is currently enabled
+ * @param context The context that wishes to know the results
+ * @return true if TalkBack is enabled
+ */
+public boolean isTalkBackEnabled(Context context);
+
+                        </pre></a></li>
+                        <li><a data-toggle="pill" href="#messages"><pre>
+/**
+ * Checks to see that explore by touch (provided via TalkBack) is currently enabled
+ * @param context The context that wishes to know the results
+ * @return true if explore by touch is enabled
+ */
+public boolean isExploreByTouchEnabled(Context context);
+                        </pre></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+                            Exmple
+                        </div>
+                        <div class="tab-pane fade" id="profile">Profile Tab.</div>
+                        <div class="tab-pane fade" id="messages">Messages Tab.</div>
+                    </div>
                 </div>
             </div>
-            <div class='col-xs-6'>
-                <h3 class='mobile-dont'>Mobile Dont's</h3>
-                <hr>
-                <div id="accordion-container" class="accordion-light ui-accordion ui-widget ui-helper-reset" role="tablist">
-                    <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-accordion-accordion-container-header-0" aria-controls="ui-accordion-accordion-container-panel-0" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e" role="presentation" aria-hidden="true"></span>Provide Text Alternatives for all images, videos and sound clips.<span class="sr-only sr-section-alert"> section is collapsed</span></h3>
-                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-accordion-container-panel-0" aria-labelledby="ui-accordion-accordion-container-header-0" role="tabpanel" aria-hidden="true" aria-expanded="false" aria-live="polite" style="display: none; height: 134px;">Include a short and long description about the piece of media. If avialable, include captions for audio and video.</div>
-                    <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active ui-corner-top" role="tab" id="ui-accordion-accordion-container-header-1" aria-controls="ui-accordion-accordion-container-panel-1" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s" role="presentation" aria-hidden="true"></span>Compliant HTML<span class="sr-only sr-section-alert"> section is expanded</span></h3>
-                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" id="ui-accordion-accordion-container-panel-1" aria-labelledby="ui-accordion-accordion-container-header-1" role="tabpanel" aria-hidden="false" aria-expanded="false" style="display: block; height: 134px;">The template has been thourghly tested and is compatible with both WCAG 2.0 AA and Section 508.</div>
-                </div>
-            </div>
+
+
         </div>
-            <!-- pre>
-            
-                /**
-                 * Checks to see that Google TalkBack is installed
-                 * @param context The context that wishes to know the results
-                 * @return true if TalkBack is installed
-                 */
-                public boolean isTalkBackInstalled(Context context);
 
-                /**
-                 * Checks to see that Google TalkBack is currently enabled
-                 * @param context The context that wishes to know the results
-                 * @return true if TalkBack is enabled
-                 */
-                public boolean isTalkBackEnabled(Context context);
 
-                /**
-                 * Checks to see that explore by touch (provided via TalkBack) is currently enabled
-                 * @param context The context that wishes to know the results
-                 * @return true if explore by touch is enabled
-                 */
-                public boolean isExploreByTouchEnabled(Context context);
-            </pre>             -->
-
-            
-        </div>
+    </div>
 
 
         </main>
