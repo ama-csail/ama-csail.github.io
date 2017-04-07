@@ -39,60 +39,55 @@
     
 </head>
 <body>
-    
+
+
     <header role="banner">
-        <div class="container navContainer">
-            <a class="skip-navigation sr-only sr-only-focusable" href="#page-title">Skip Navigation</a>
-            <div class="navbar-header active">
-                <a class="brand pull-left" href="index.html">
-                    <br>
-                    <h1>Accessibility of Mobile Apps</h1></a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topNavList" aria-expanded="false">
-                    <span class="adobeBlank" aria-hidden="true">Expand Navigation</span>
-                    <em class="fa fa-bars fa-lg" style="font-family :'FontAwesome' !important">
-                        <span id="expandText" class="sr-only">Expand Navigation</span>
-                    </em>
-                </button>
+        <nav class="navbar navbar-default navbar-fixed-top" style="">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Accessibility of Mobile Apps</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="our_mission.html">Our Mission</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">Accessibility Resources
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="what_is_mobile_accessibility.html">What is Native Mobile Accessibility?</a></li>
+                                <li><a href="mobile_accessibility_legislation.html">Native Mobile Accessibility Legislation</a></li>
+                                <li><a href="mobile_accessibility_guidelines.html">Native Mobile Accessibility
+                                    Guidelines</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">AMA Native Mobile Guidelines</li>
+                                <li><a href="ama_tutorials.html">Tutorial Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">AMA Library
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a href="ama_library_overview.html">Overview</a></li>
+                                <li><a href="ama_tutorials.html">Tutorial</a></li>
+                                <li><a href="http://github.mit.edu/dig/accessibility" target="_blank">Source
+                                    Code on Github</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
             </div>
-
-            <nav class="collapse navbar-collapse" aria-label="Main navigation" id="topNavList" aria-expanded="false">
-                <ul class="nav navbar-nav navbar-right marginTop40" aria-expanded="false">
-                    <li class="">
-                        <a href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Home </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="our_team.html">Our Team</a></li>
-                            <li><a href="our_mission.html">Our Mission</a></li>
-                            <li><a href="http://dig.csail.mit.edu" target='_blank'>MIT DIG @ CSAIL</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accessibility Resources <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="what_is_mobile_accessibility.html">What is Mobile Accessibility?</a></li>
-                            <li><a href="digital_accessibility_legislation.html">Digital Accessibility Legislation</a></li>
-                            <li><a href="digital_accessibility_standards.html">Digital Accessibility Standards</a></li>
-                            <li><a href="accessibility_faq.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AMA Library <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="ama_library_overview.html">What is AMA Library?</a></li>
-                            <li><a href="ama_tutorials.html">Tutorials</a></li>
-                            <li><a href="ama_documentation.html">Documentation</a></li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <a href="sitemap.html">Sitemap</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
-
         <!-- begin Main -->
         <main role="main" aria-label="main section" id="main-content">
 
@@ -121,14 +116,15 @@
 
         <div class="container bottomMargin50">
 
-            <h3>The AMA Library is an open-source,  rich set of easy-to-use accessibility helper functions based on various digital accessibility standards for Android Developers to:</h3>
-            <h3>
+            <h4>The AMA Library is an open-source,  rich set of easy-to-use accessibility helper functions based on
+                various digital accessibility standards for Android Developers to:</h4>
+            <h5>
                 <ol>
                     <li>make their apps accessible</li>
                     <li>make their app compatible with Android Accessibiloty</li>
                     <li>extend their apps accessibility features</li>
                 </ol>
-            </h3>
+            </h5>
             <br>
             <h4 class='text-center'><a href="http://github.mit.edu/dig/accessibility" target="_blank">Check out the library here (currently under development).</a></h4>
             <hr>
