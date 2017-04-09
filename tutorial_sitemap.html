@@ -1,0 +1,336 @@
+   <!DOCTYPE HTML>
+<!--[if lt IE 8]><html class="no-js oldIE" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US" class="no-js not-ie"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MIT CSAIL | Accessibility of Mobile Apps</title>
+    <meta name="description" content="Accessible+ | an accessible website template that complies to Section 508 and WCAG 2.0 AA standards" />
+    <meta name="keywords" content="" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.5.7/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.5.7/slick-theme.css"/>
+    <link rel="stylesheet" href="vendor/share/4.0/styles/sharewidget-4.0.css"/>
+    <link href="vendor/rwdTable/1.0/css/rwdtable-core.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/jqueryui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="vendor/globalassets/styles/widgets/tooltips.css">
+    <link rel="stylesheet" href="vendor/globalassets/styles/widgets/dropdowns.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/features.css">    
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/style.css" title="default">
+        
+    <!-- Accessibility Menu -->
+    <link href="accessibility-menu/accessibilitymenu.css" type="text/css" rel="stylesheet" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:400,200,700' rel='stylesheet' type='text/css'>
+
+    <script src="vendor/modernizr/modernizr.js"></script>
+
+    <script src="vendor/jquery/jquery.js"></script>  
+    <script src="vendor/jqueryui/ui/jquery-ui.js"></script>
+    <script src="vendor/bootstrap/3.3.1/js/bootstrap.min.js"></script>    
+    <script src="vendor/globalassets/scripts/assets.core.js"></script>
+    
+</head>
+<body>
+    
+  <style>
+        .w3-sidenav, .w3-sidebar {
+            height: 100%;
+            width: 200px;
+            background-color: #fff;
+            position: fixed!important;
+            z-index: 1;
+            overflow: auto;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+            top: 0px;
+            margin-left: 85%
+        }
+
+        .side-list {
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .side-list li {
+            padding: 5px;
+        }
+        .mobile-do {
+            font-weight: bold;
+            color: green;
+            text-align: center;
+        }
+        .mobile-dont {
+            font-weight: bold;
+            color: red;
+            text-align: center;
+        }
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+            background-color: #337ab7;
+        }
+
+        .tab-image {
+            height: 30px;
+        }
+
+        .os-tutorials .nav-tabs {
+            font-size: 24px;
+        }
+          .title-image {
+              height: 40px;
+          }
+    </style>
+
+    <!-- Sidebar -->
+
+    <nav class="w3-sidenav w3-white w3-card-2 hidden-xs" style="width:15%">
+      <br>
+        <ul class="side-list" style='margin-top:50%;'>
+            <li><a href="#perceivable">1. Perceivable</a></li>
+            <li><a href="#color-blind">&nbsp;&nbsp;&nbsp;1.1 Text Alternatives</a></li>
+            <li><a href="#limited-vocal">&nbsp;&nbsp;&nbsp;1.2 Time-based Media</a></li>
+            <li><a href="#limited-hearing">&nbsp;&nbsp;&nbsp;1.3 Dynamic Layout</a></li>
+            <li><a href="#lack-motor">&nbsp;&nbsp;&nbsp;1.4 Layer Separation</a></li>
+            <li><a href="#limited-cognition">2. Operable</a></li>
+            <li><a href="#lack-motor">&nbsp;&nbsp;&nbsp;2.1 Keyboard Compatible</a></li>
+            <li><a href="#lack-motor">&nbsp;&nbsp;&nbsp;2.2 Enough Time</a></li>
+            <li><a href="#lack-motor">&nbsp;&nbsp;&nbsp;2.3 Not Harmful</a></li>
+            <li><a href="#lack-motor">&nbsp;&nbsp;&nbsp;2.4 Navigation</a></li>
+            <li><a href="#limited-cognition">3. Understandable</a></li>
+            <li><a href="#lack-motor">&nbsp;&nbsp;&nbsp;3.1 Text Content</a></li>
+            <li><a href="#lack-motor">&nbsp;&nbsp;&nbsp;3.2 Predictable Behavior</a></li>
+            <li><a href="#lack-motor">&nbsp;&nbsp;&nbsp;3.3 Avoid Mistakes</a></li>
+            <li><a href="#limited-cognition">4. Robust</a></li>
+            <li><a href="#lack-motor">&nbsp;&nbsp;&nbsp;4.1 Compatibility</a></li>
+        </ul>
+      
+    </nav>           
+    <!-- /#sidebar-wrapper -->
+
+
+      <header role="banner">
+          <nav class="navbar navbar-default navbar-fixed-top" style="">
+              <div class="container">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Accessibility of Mobile Apps</a>
+                  </div>
+                  <div id="navbar" class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav navbar-right">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="our_mission.html">Our Mission</a></li>
+                          <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                 aria-haspopup="true" aria-expanded="false">Accessibility Resources
+                                  <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="what_is_mobile_accessibility.html">What is Native Mobile Accessibility?</a></li>
+                                  <li><a href="mobile_accessibility_legislation.html">Native Mobile Accessibility Legislation</a></li>
+                                  <li><a href="mobile_accessibility_guidelines.html">Native Mobile Accessibility
+                                      Guidelines</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li class="dropdown-header">AMA Native Mobile Guidelines</li>
+                                  <li class="active"><a href="ama_tutorials.html">Tutorial Page</a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown active">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                 aria-haspopup="true" aria-expanded="false">AMA Library
+                                  <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="ama_library_overview.html">Overview</a></li>
+                                  <li class="active"><a href="tutorial_sitemap.html">Tutorial</a></li>
+                                  <li><a href="http://github.mit.edu/dig/accessibility" target="_blank">Source
+                                      Code on Github</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div><!--/.nav-collapse -->
+              </div>
+          </nav>
+      </header>
+        <!-- begin Main -->
+        <main role="main" aria-label="main section" id="main-content" style='margin-right:15%;'>
+
+            <section id="page-title">
+                <div class="container " role="header and benefits"> 
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <ol class="breadcrumb" role="breadcrumb">
+                                <li>
+                                    <a href="index.html" title="Home">Home</a>
+                                </li>
+                                <li class="active">
+                                    Native Mobile Accessibility Tutorials
+                                </li>   
+                            </ol>
+
+                            <h1 class="pageTitle">Native Mobile Accessibility Tutorials</h1>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>  
+
+
+        <div class="container bottomMargin50">
+
+            <h1 id="operable">2. Operable</h1>
+            <h2 id="navigation">2.4 Navigation</h2>
+            <h6>2.4.5 Multiple Ways: More than one way is available to locate a Web page within a set of Web
+                    pages except where the Web Page is the result of, or a step in, a process. (Level AA)</h6>
+            <br>
+            <div class="col-xs-12 col-sm-9 col-sm-offset-1">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Success Criteria</div>
+                    <div class="panel-body">
+
+                    <p>Make it possible for users to locate content in a manner that best meets their needs. Users
+                        may find one technique easier or more comprehensible to use than another.
+                    </p>
+                    <p>Even small apps should provide users some means of orientation. For a three or four page
+                        apps, with all pages linked from the home page, it may be sufficient simply to provide links
+                        from and to the home page where the links on the home page can also serve as a site map.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-xs-12 col-sm-12">
+                <h3><img class='title-image' src="images/android.png"></i>&nbsp;&nbsp;AMA
+                    Library
+                    Tutorial</h3>
+                <hr>
+                <h4>Add a Sitemap to your App</h4>
+                <p>Adding a sitemap to your mobile application can be extremely effective for users who experience
+                    cognitive disabilities. This allows users to view all of the different pages of your app at
+                    once and serve as an alternate method for navigation including those dependent on voice
+                    and gesture input.</p>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-offset-1">
+
+                <h6>Steps:</h6>
+                <ol>
+                    <li>Enable the AMA Accessibility Menu</li>
+                    <li>Provide a Sitemap</li>
+                    <li>Show the AMA Accessibiity Menu</li>
+                </ol>
+                <br>
+
+                <h6>Step 1: Enable the AMA Accessibility Menu</h6>
+                <p>The <a href="ama_accessibility_menu.html">AMA Accessibility Menu</a> is a floating menu that
+                    provides alternate and robust functionality for users. The menu works across AMA apps and stores
+                    user's preferences to
+                    provide a streamlines accessible experience.
+                </p>
+                <img src="images/icon-accessibility.png">
+                <p>To enable the AMA Accessibility Menu:</p>
+                <p style="margin-left: 15px;">a. Extend your Activity with AccessibleAppCompatActivity</p>
+                <pre>
+    public class MainActivity extends AccessibleAppCompatActivity {
+            ...
+    }</pre>
+                <p style="margin-left: 15px;">b. Enable the AMA Accessibility Menu</p>
+<pre>
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        ...
+
+        enableMenu(); // Note that you must enabled the menu before configuring
+    }
+</pre>
+                <br>
+                <h6>Step 2: Provide a Sitemap</h6>
+                <p style="margin-left: 15px;">a. Generate a list of your Intents for each of your Activities</p>
+
+                <p style="margin-left: 15px;">b. Pass your list of Intents to AMA to create a sitemap </p>
+<pre>
+    /**
+     * Generates a list of intents which can be called to access other
+     * parts of the application.
+     */
+    private void generateIntentList() {
+
+        IntentEntry thisIntent =
+                new IntentEntry("Main Activity", new Intent(this, MainActivity.class));
+        IntentEntry otherIntent =
+                new IntentEntry("Other Activity", new Intent(this, OtherActivity.class));
+
+        this.giveSitemap("Accessible App Sitemap", thisIntent, otherIntent);
+
+    }</pre>
+
+                <br>
+
+                <h6>Step 3: Show the AMA Accessibility Menu</h6>
+                <p style="margin-left: 15px;">a. Show the AMA Accessibility Menu </p>
+<pre>
+   @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        ...
+
+        showMenu();
+    }</pre>
+
+                <br>
+                <h6>And your done!</h6>
+            </div>
+    </div>
+
+
+        </main>
+
+
+    <a href="#" class="scrollToTop" alt="Scroll To Top"><span class="sr-only">Scroll To Top</span></a>
+<!-- begin footer-->
+    <footer class="footer" role="contentinfo" style='margin-right:15%;'>
+        <div class="container">
+            <p><small>Copyright &copy; 2016 AMA Project | Decentralized Information Group | CSAIL | MIT | Cambridge, MA. Template Designed by <a href="http://shakedwebdesign.com/" target="_blank">Sharon Shaked</a>.</small></p>
+        </div>
+    </footer>
+<!-- end footer -->    
+
+<!-- build:js scripts/main.js -->
+<!--<script data-main="scripts/main" src="vendor/requirejs/require.js"></script>-->
+<!-- endbuild -->
+<!-- endbuild -->
+<script src="vendor/globalassets/scripts/assets.responsive.js"></script>
+<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+
+<script src="vendor/share/4.0/js/sharewidget-4.0.js"></script>
+<script type="text/javascript" src="vendor/slick-1.5.7/slick.min.js"></script>
+<script src="vendor/portfolio/jquery.quicksand.js"></script>    
+<script src="vendor/globalassets/scripts/breadcrumb.js"></script>
+<script src="vendor/back-to-top/main.js"></script> 
+<script type="text/javascript" src="accessibility-menu/accessibilitymenu.js" data-language="eng" data-oemsource="accessible+" data-sign="classic"></script>
+    <script>
+        $(function() {
+            $('#accordion-container').accordion();
+            $('#text-alternatives-accordion-container').accordion();
+        });
+
+    </script>
+<script type="text/javascript">
+        $( document ).ready(function() {
+            $(".accessibilityimage").attr("src","images/icon-accessibility.png");
+            $(".accessibilityimage").attr("height","70");
+        });
+    </script>
+</body>
+</html>
