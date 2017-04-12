@@ -10,7 +10,7 @@ body {
 }
 
 .nav li.active a {
-    color: black;
+    color: white;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -42,17 +42,18 @@ body {
 
 /* Navbar */
 .navbar-default {
-    background-color: #ffffff;
-    border-color: #f5f5f5;
-    color: black;
+    background-color: #3366FF;
+    border-color: #3366FF;
+    color: white;
+    box-shadow: 0px 5px 5px darkgrey;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: black;
+    color: white;
 }
 
 .navbar-default .navbar-brand {
-    color: black;
+    color: white;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: #0a0ab7;
