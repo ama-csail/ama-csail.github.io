@@ -32,11 +32,33 @@
 }
 
 h6 {
-	font-size: 22px;
+	font-size: 18px;
+	font-family: "Open Sans";
 }
 
+h1, h2, h3, h4, h5 {
+	font-family: "Open Sans";
+}
 
 .issues-list {
     text-align: center;
     list-style-type: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+@media (max-width: 767px){
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: white;
+	}
+	.dropdown-header {
+		display: block;
+		padding: 3px 20px;
+		font-size: 12px;
+		line-height: 1.42857143;
+		color: white;
+		white-space: nowrap;
+	}
 }

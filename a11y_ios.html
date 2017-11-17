@@ -1,0 +1,186 @@
+   <!DOCTYPE HTML>
+<!--[if lt IE 8]><html class="no-js oldIE" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US" class="no-js not-ie"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MIT CSAIL | Accessibility of Mobile Apps</title>
+    <meta name="description" content="Accessible+ | an accessible website template that complies to Section 508 and WCAG 2.0 AA standards" />
+    <meta name="keywords" content="" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.5.7/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.5.7/slick-theme.css"/>
+    <link rel="stylesheet" href="vendor/share/4.0/styles/sharewidget-4.0.css"/>
+    <link href="vendor/rwdTable/1.0/css/rwdtable-core.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/jqueryui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="vendor/globalassets/styles/widgets/tooltips.css">
+    <link rel="stylesheet" href="vendor/globalassets/styles/widgets/dropdowns.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/features.css">    
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/style.css" title="default">
+        
+    <!-- Accessibility Menu -->
+    <link href="accessibility-menu/accessibilitymenu.css" type="text/css" rel="stylesheet" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:400,200,700' rel='stylesheet' type='text/css'>
+
+    <script src="vendor/modernizr/modernizr.js"></script>
+
+    <script src="vendor/jquery/jquery.js"></script>  
+    <script src="vendor/jqueryui/ui/jquery-ui.js"></script>
+    <script src="vendor/bootstrap/3.3.1/js/bootstrap.min.js"></script>    
+    <script src="vendor/globalassets/scripts/assets.core.js"></script>
+    
+</head>
+<body>
+    
+  <style>
+        .width-50 {
+            margin-left: 25%;
+            width: 50%;
+        }
+        .marking {
+            display: inline-block;
+            position: relative;
+            top: 200px;
+        }
+        .correct {
+            float: left;
+        }
+        .wrong {
+            float: right;
+        }
+    </style>
+
+
+  <header role="banner">
+      <nav class="navbar navbar-default navbar-fixed-top" style="">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+              <div id="myNavbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="our_mission.html">Our Mission</a></li>
+                      <li class="dropdown active">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                             aria-haspopup="true" aria-expanded="false">Accessibility Resources
+                              <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="what_is_mobile_accessibility.html">What is Native Mobile Accessibility?</a></li>
+                              <li><a href="mobile_accessibility_legislation.html">Native Mobile Accessibility Legislation</a></li>
+                              <li><a href="mobile_accessibility_guidelines.html">Native Mobile Accessibility
+                                  Guidelines</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li class="dropdown-header">Native Mobile Accessibility Tutorials</li>
+                              <li><a href="mobile_ui_tips.html">Mobile UI Recommendations</a></li>
+                              <li class="active"><a href="a11y_ios.html">A11y for iOS</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                             aria-haspopup="true" aria-expanded="false">AMA Library
+                              <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="ama_library_overview.html">Overview</a></li>
+                              <li><a href="tutorial_sitemap.html">Tutorial</a></li>
+                              <li><a href="https://github.com/ama-csail/ama-android" target="_blank">Source
+                                  Code on Github</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div><!--/.nav-collapse -->
+          </div>
+      </nav>
+  </header>
+
+  <!-- begin Main -->
+        <main role="main" aria-label="main section" id="main-content" style=''>
+
+            <section id="page-title">
+                <div class="container " role="header and benefits"> 
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <ol class="breadcrumb" role="breadcrumb">
+                                <li>
+                                    <a href="index.html" title="Home">Home</a>
+                                </li>
+                                <li class="active">
+                                    iOS Accessible Multimedia App Tutorial
+                                </li>   
+                            </ol>
+
+                            <h1 class="pageTitle">iOS Accessible Multimedia App Tutorial</h1>
+
+                            <h6 style="margin-left: 15%; width: 70%" class="text-center">We will build a YouTube clone application and make
+                                it accessible for iOS with Swift.</h6>
+
+                            <hr>
+
+
+
+                            <p class="text-center"><small>The guidlines above were adapted from <a
+                                    href="https://developer.apple.com/design/tips/" target="_blank">Apple's UI Tips</a></small></p>
+                            <hr>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </div>
+
+
+        </main>
+
+
+    <a href="#" class="scrollToTop" alt="Scroll To Top"><span class="sr-only">Scroll To Top</span></a>
+<!-- begin footer-->
+    <footer class="footer" role="contentinfo" style=''>
+        <div class="container">
+            <p><small>Copyright &copy; 2016 AMA Project | Decentralized Information Group | CSAIL | MIT | Cambridge, MA. Template Designed by <a href="http://shakedwebdesign.com/" target="_blank">Sharon Shaked</a>.</small></p>
+        </div>
+    </footer>
+<!-- end footer -->    
+
+<!-- build:js scripts/main.js -->
+<!--<script data-main="scripts/main" src="vendor/requirejs/require.js"></script>-->
+<!-- endbuild -->
+<!-- endbuild -->
+<script src="vendor/globalassets/scripts/assets.responsive.js"></script>
+<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+
+<script src="vendor/share/4.0/js/sharewidget-4.0.js"></script>
+<script type="text/javascript" src="vendor/slick-1.5.7/slick.min.js"></script>
+<script src="vendor/portfolio/jquery.quicksand.js"></script>    
+<script src="vendor/globalassets/scripts/breadcrumb.js"></script>
+<script src="vendor/back-to-top/main.js"></script> 
+<script type="text/javascript" src="accessibility-menu/accessibilitymenu.js" data-language="eng" data-oemsource="accessible+" data-sign="classic"></script>
+    <script>
+        $(function() {
+            $('#accordion-container').accordion();
+            $('#text-alternatives-accordion-container').accordion();
+        });
+
+    </script>
+<script type="text/javascript">
+        $( document ).ready(function() {
+            $(".accessibilityimage").attr("src","images/icon-accessibility.png");
+            $(".accessibilityimage").attr("height","70");
+        });
+    </script>
+</body>
+</html>

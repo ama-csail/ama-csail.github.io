@@ -63,8 +63,14 @@
     <header role="banner">
         <nav class="navbar navbar-default navbar-fixed-top" style="">
             <div class="container">
-
-                <div id="navbar" class="navbar-collapse collapse">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="myNavbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -79,8 +85,9 @@
                                 <li><a href="mobile_accessibility_guidelines.html">Native Mobile Accessibility
                                     Guidelines</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">AMA Native Mobile Guidelines</li>
-                                <li><a href="ama_tutorials.html">Tutorial Page</a></li>
+                                <li class="dropdown-header">Native Mobile Accessibility Tutorials</li>
+                                <li><a href="mobile_ui_tips.html">Mobile UI Recommendations</a></li>
+                                <li><a href="a11y_ios.html">A11y for iOS</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -90,7 +97,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="ama_library_overview.html">Overview</a></li>
                                 <li><a href="tutorial_sitemap.html">Tutorial</a></li>
-                                <li><a href="http://github.mit.edu/dig/accessibility" target="_blank">Source
+                                <li><a href="https://github.com/ama-csail/ama-android" target="_blank">Source
                                     Code on Github</a></li>
                             </ul>
                         </li>
@@ -103,63 +110,58 @@
     <!-- begin Main -->
     <main role="main" aria-label="main section" id="main-content">
         <!-- The example code below will create a two column grid with a medium breakpoint -->
-        <div class="container bottomMargin50" role="header and benefits">
-            <section id="page-title">
+            <section id="page-title" class="bottomMargin50">
+                <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="center">Helping Developers Make Accessible Mobile Apps</h1>
-                        <h5>The AMA Library is an open-source,  rich set of easy-to-use accessibility helper
-                            functions based on
-                            various digital accessibility standards for Android Developers to:</h5>
-                        <h6>
-                            <ol>
-                                <li>make their apps accessible</li>
-                                <li>make their app compatible with iOS, Android and Windows accessibility features</li>
-                                <li>extend Android apps accessibility features to meet WCAG 2.0 AA standards</li>
-                            </ol>
-                        </h6>
-                        <br>
-                        <h4 class='text-center'><a href="http://github.mit.edu/dig/accessibility" target="_blank">Check out the library here (currently under development).</a></h4>
+                    <div class="col-sm-6">
+                        <h1><strong>Accessibility of Mobile Apps</strong></h1>
+                        <h4>A CSAIL Project @ MIT</h4>
                         <hr>
+                        <p><strong>Helping Developers Make Accessible Mobile Apps</strong></p>
+                        <ul>
+                            <li>Native Mobile Accessibility Guidelines, Legislation and Resources</li>
+                            <li>Accessible UI Recommendations</li>
+                            <li>iOS and Android Accessibility API Tutorials and Techniques</li>
+                            <li>AMA Library for extending Android App Accessibility</li>
+                        </ul>
                     </div>
+                    <div class="col-sm-6 text-center">
+                        <img src="images/MobileAccessibility-Header.png" width="100%" style="border-radius: 25px;"
+                             alt="Mobile Accessibility Graphic">
+                    </div>
+                </div>
                 </div>
             </section>
 
-            <div id="mainImageDiv">
-                <img src="images/ama-overview.png" class="headImage" alt="Overview of Ama Library">
+        <section id="boxes" role="features" class="alternate ">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="featured-box noborder">
+                        <!-- add .transparent for no background color -->
+                        <a href="our_mission.html" class="btn buttonRound blue"><span aria-hidden="true"><i class="fa fa-universal-access"></i></span><span class="sr-only">Universal-Access Icon</span></a>
+                        <h4>Our Mission</h4>
+                        <p>We hope to transform native mobile development for accessibility by providing resources and tools for developers and designers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="featured-box noborder">
+                        <!-- add .transparent for no background color -->
+                        <a href="about.html" class="btn buttonRound blue"><span aria-hidden="true"><i class="fa fa-users"></i></span><span class="sr-only">Users Icon</span></a>
+                        <h4>Our Team</h4>
+                        <p>We are four computer science undergraduate students at MIT with a passion for accessibility and UI design, specifically in the areas of Android and iOS.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="featured-box noborder">
+                        <!-- add .transparent for no background color -->
+                        <a href="ama_library_overview.html" class="btn buttonRound blue"><span aria-hidden="true"><i class="fa fa-code"></i></span><span class="sr-only">HTML Tag Icon</span></a>
+                        <h4>Open Source</h4>
+                        <p>All parts of this project are open source and available to all developers. We hope to encourage innovation in accessible design for a better world.</p>
+                    </div>
+                </div>
             </div>
-
-            <section id="boxes" role="features" class="">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="featured-box noborder">
-                            <!-- add .transparent for no background color -->
-                            <a href="our_mission.html" class="btn buttonRound blue"><span aria-hidden="true"><i class="fa fa-universal-access"></i></span><span class="sr-only">Universal-Access Icon</span></a>
-                            <h4>Our Mission</h4>
-                            <p>We hope to transform native mobile development for accessibility by providing resources and tools for developers and designers.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="featured-box noborder">
-                            <!-- add .transparent for no background color -->
-                            <a href="about.html" class="btn buttonRound blue"><span aria-hidden="true"><i class="fa fa-users"></i></span><span class="sr-only">Users Icon</span></a>
-                            <h4>Our Team</h4>
-                            <p>We are four computer science undergraduate students at MIT with a passion for accessibility and UI design, specifically in the areas of Android and iOS.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="featured-box noborder">
-                            <!-- add .transparent for no background color -->
-                            <a href="ama_library_overview.html" class="btn buttonRound blue"><span aria-hidden="true"><i class="fa fa-code"></i></span><span class="sr-only">HTML Tag Icon</span></a>
-                            <h4>Open Source</h4>
-                            <p>All parts of this project are open source and available to all developers. We hope to encourage innovation in accessible design for a better world.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <section role="Action bar" class="bottomMargin50">
+        </section>
+        <section role="Action bar" class="">
             <div class="ActionBarDiv">
                 <div class="container">
                     <div class="row">

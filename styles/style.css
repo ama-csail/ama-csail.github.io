@@ -617,11 +617,7 @@ h1,a {
     border-bottom:1px solid #ddd;
 }
 
-.alternate a {
-    color:#3358FF;
-
-}
-
+i
 hr{
     width: 250px;
     border-top-style: dashed; 
@@ -721,7 +717,7 @@ hr{
 
 div.featured-box {
     padding: 23px;
-    background: rgba(0,0,0,0.01);
+    /*background: rgba(0,0,0,0.01);*/
     text-align: center;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
